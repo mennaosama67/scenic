@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400&display=swap');
+/*main styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 200;
+}
+body{
+    font-size:1rem;
+    color: white;
+}
+h6{
+    color: #333;
+    letter-spacing: 1rem;
+
+}
+p{
+    color: #757575;
+}
+ul{
+    margin-top:.8rem;
+    margin-left:60%;
+}
+button{
+ border-style: none;
+ padding: 10px 20px;
+ background-color: #4dc47d;
+ color: white;
+ margin-top: 20px;
+}
+button:hover{
+    background-color: black;
+    transition: 0.2s;
+}
+.mr-top{
+    margin-top:10rem;
+}
+
+/* header styles*/
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.75);
+}
+.video-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  
+}
+.my-video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.navbar-brand{ 
+    font-size: 2rem;
+}
+.nav-link{
+    color: white !important; 
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    float: right;
+}
+.nav-link:hover{
+    border-color: white;
+}
+.scrolling-active{
+    background-color:#4dc47d;
+    
+}
+.header-content{
+    position: absolute;
+    top:40%;
+    left:8%;
+}
+.header-content h1{
+    line-height: 1.4;
+    font-weight: lighter;
+    font-size:4.5rem;
+    letter-spacing:0.2rem;   
+}
+
+/*studio styles*/
+.studio-content{
+    text-align: center;
+   
+}
+.studio-content h6{
+    font-weight: 400;
+}
+.studio-content p{
+   font-size: 2rem;
+   color: #333;
+   font-weight: lighter;
+   margin-top: 30px;
+   width: 80%;
+
+}
+
+
+@media(max-width:789px){
+    .header-content h1{
+        font-size:3.8rem;
+    }
+}
+@media(max-width:610px){
+    .header-content h1{
+        font-size:3rem;
+    }
+}
+
+/* gallary styles*/
+.item{
+    overflow: hidden;
+    position: relative;
+}
+.item img{
+    transition: transform .9s ease;
+}
+.item:hover img{
+    transform: scale(1.2);
+filter: brightness(50%);
+}
+.text-overlay{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    right:35%;
+    visibility: hidden;
+}
+.text-overlay h6{
+    color: white;
+    letter-spacing: normal;
+}
+.item:hover .text-overlay{
+    visibility: visible;
+}
+
+/*people styles*/
+.people-header{
+text-align: center;
+color:  #333;
+font-weight:lighter ;
+}
+
+#owl-demo .team{
+    margin: 3px;
+  }
+  #owl-demo .team img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+ .icon-overlay{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 40%;
+    right:20%;
+    visibility: hidden;
+ }
+ .item:hover .icon-overlay{
+    visibility: visible;
+}
+
+  i{
+      border-radius: 50%;
+      background-color: white;
+      color: black;
+    display: flex;
+    padding:10px 10px;
+    margin-left:10px;
+    margin-right:5px;
+    
+  }
+  .team-info{
+text-align: center;
+  }
+  .team-info h3{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: dimgray;
+  }
+
+  /*lets-talk styles*/
+  #lets-talk{
+      background: url("../images/contact-bg.jpg") no-repeat center ;
+      background-size:cover ;
+      height: 600px;
+  }
+  .form{
+      margin: auto;
+      width:60%;
+  }
+.form-control {
+background-color: ghostwhite;
+border: none;
+box-shadow: none;
+color: #555;
+  }
+  .form button{
+   margin-left:41%;
+  }
+ 
+  @media (max-width: 768px){
+      .form{
+          width: 100%;
+      }
+      
+  }
+
+
+  /*info styles*/
+
+  .info-part h2{
+      color:#555 ;
+  }
+  @media (max-width: 768px){
+    .infos{
+       flex-direction: column;
+      text-align: center;
+    }
+    .infos .info-part{
+        margin-bottom: 20px;
+    }
+    
+}
